@@ -23,3 +23,12 @@ def test_check_if_special():
         lst_test.append(check_if_special(word))
     lst_exp = [False, True, False, False]
     assert lst_exp == lst_test
+
+
+def test_check_if_valid_password():
+    input = ["Bonjourrrr*", "Salut*", "*okcooolzerou", "AlorslaCestParfait*"]
+    lst_test = []
+    for word in input:
+        lst_test.append(check_if_valid_password(word))
+    lst_exp = [True, False, False, True]
+    assert lst_exp == lst_test
