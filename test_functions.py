@@ -26,7 +26,7 @@ def test_check_if_special():
 
 
 def test_check_if_valid_password():
-    input = ["Bonjourrrr*", "Salut*", "*okcooolzerou", "AlorslaCestParfait*"]
+    input = ["Bonjourrrr*", "Salut*", "*okcooolzeroua", "AlorslaCestParfait*"]
     lst_test = []
     for word in input:
         lst_test.append(check_if_valid_password(word))
