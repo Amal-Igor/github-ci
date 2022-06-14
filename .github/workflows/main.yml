@@ -23,7 +23,7 @@ jobs:
       matrix:
         python-version: ["3.6", "3.7", "3.8", "3.9"]
 
-    steps:
+    step:
 # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
@@ -50,7 +50,7 @@ jobs:
 
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
+    step:
       - uses: actions/checkout@v3        
       - name: Build and push Docker Image
         # On peut entrer les commandes directement ici login + build
