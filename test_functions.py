@@ -21,5 +21,5 @@ def test_check_if_special():
     lst_test = []
     for word in input:
         lst_test.append(check_if_special(word))
-    lst_exp = [False, True, False, False]
+    lst_exp = [True, True, False, False]
     assert lst_exp == lst_test
