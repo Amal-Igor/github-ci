@@ -12,4 +12,6 @@ COPY . .
 
 RUN python3 app.py
 
-CMD echo " !! Cela veut dire que ça fonctionne !"
+CMD ["python3", "main.py"]
+
+#CMD echo " !! Cela veut dire que ça fonctionne !"
