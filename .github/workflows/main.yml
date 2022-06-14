@@ -51,7 +51,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-         
+      - uses: actions/checkout@v3        
       - name: Build and push Docker Image
         # On peut entrer les commandes directement ici login + build
         uses: mr-smithers-excellent/docker-build-push@v5
