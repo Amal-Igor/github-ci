@@ -34,3 +34,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      - name: Build and push Docker Image
+        # On peut entrer les commandes directement ici login + build
+        uses: mr-smithers-excellent/docker-build-push@v5
+        with:
+          image: tenchu88/github_ci
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
