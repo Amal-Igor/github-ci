@@ -30,5 +30,5 @@ def test_check_if_valid_password():
     lst_test = []
     for word in input:
         lst_test.append(check_if_valid_password(word))
-    lst_exp = [True, False, False, True]
+    lst_exp = [False, False, False, True]
     assert lst_exp == lst_test
