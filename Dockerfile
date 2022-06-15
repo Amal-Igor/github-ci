@@ -10,8 +10,7 @@ RUN pip install pytest
 
 COPY . .
 
-RUN python3 app.py
+#RUN python3 app.py
 
 CMD ["python3", "main.py"]
 
-#CMD echo " !! Cela veut dire que ça fonctionne !"
